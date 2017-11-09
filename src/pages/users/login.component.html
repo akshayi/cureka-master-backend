@@ -1,0 +1,28 @@
+
+
+<body class="bg-login">
+<h1 class="logo-name center">Cureka</h1>
+    <div class="middle-box text-center loginscreen animated fadeInDown">
+        <div>
+            <p>Login in. To see it in action.</p>
+            <div class="alert alert-danger" *ngIf="errorMsg">
+                                {{errorMsg}}
+                            </div>
+            <form class="m-t" role="form" >
+                <div class="form-group">
+                    <input type="email" name="email" class="form-control" placeholder="Username" [(ngModel)]="email" value="" required="">
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password" class="form-control" placeholder="Password" [(ngModel)]="password" value="" required="">
+                </div>
+                <button type="button" class="btn btn-primary block full-width m-b" (click)="formSubmit()">Login</button>
+
+                <a href="#"><small>Forgot password?</small></a>
+                <p class="text-muted text-center"><small>This Login Is Only For Cureka Admin</small></p>
+            </form>
+            <p class="m-t"> <small>Design & Developed By @KishanMadhesiya &copy; 2017</small> </p>
+        </div>
+    </div>
+
+
+</body>

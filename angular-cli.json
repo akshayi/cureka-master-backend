@@ -1,0 +1,106 @@
+{
+  "project": {
+    "version": "1.0.0-beta.28.3",
+    "name": "mean"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.json",
+      "prefix": "app",
+      "styles": [
+        "../src/assets/css/bootstrap.min.css",
+        "../src/assets/font-awesome/css/font-awesome.css",
+        "../src/assets/css/plugins/iCheck/custom.css",
+        "../src/assets/css/plugins/chosen/bootstrap-chosen.css",
+        "../src/assets/css/plugins/toastr/toastr.min.css",
+        "../src/assets/js/plugins/gritter/jquery.gritter.css",
+        "../src/assets/css/animate.css",
+        "../src/assets/css/plugins/dropzone/basic.css",
+        "../src/assets/css/plugins/dropzone/dropzone.css",
+        "../src/assets/css/plugins/jasny/jasny-bootstrap.min.css",
+        "../src/assets/css/plugins/codemirror/codemirror.css",
+        "../src/assets/css/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css",
+        "../src/assets/css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css",
+        "../src/assets/css/plugins/select2/select2.min.css",
+        "../src/assets/css/plugins/dualListbox/bootstrap-duallistbox.min.css",
+        "../src/assets/css/plugins/dataTables/datatables.min.css",
+        "../src/assets/css/plugins/sweetalert/sweetalert.css",
+        "../src/assets/css/style.css",
+        "styles.css"
+      ],
+      "scripts": [
+        "../src/assets/js/jquery-3.1.1.min.js",
+        "../src/assets/js/bootstrap.min.js",
+        "../src/assets/js/plugins/metisMenu/jquery.metisMenu.js",
+        "../src/assets/js/plugins/slimscroll/jquery.slimscroll.min.js",
+        "../src/assets/js/plugins/jquery-ui/jquery-ui.min.js",
+        "../src/assets/js/plugins/jasny/jasny-bootstrap.min.js",
+        "../src/assets/js/plugins/dropzone/dropzone.js",
+        "../src/assets/js/plugins/codemirror/codemirror.js",
+        "../src/assets/js/plugins/chosen/chosen.jquery.js",
+        "../src/assets/js/plugins/jsKnob/jquery.knob.js",
+        "../src/assets/js/plugins/iCheck/icheck.min.js",
+        "../src/assets/js/plugins/select2/select2.full.min.js",
+        "../src/assets/js/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js",
+        "../src/assets/js/plugins/dualListbox/jquery.bootstrap-duallistbox.js",
+        "../src/assets/js/plugins/toastr/toastr.min.js",
+        "../src/assets/js/plugins/dataTables/datatables.min.js",
+        "../src/assets/js/plugins/sweetalert/sweetalert.min.js",
+        "../src/assets/js/inspinia.js",
+        "../src/assets/js/plugins/codemirror/mode/xml/xml.js"
+
+      ],
+      "environments": {
+        "source": "environments/environment.ts",
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "lint": [
+    {
+      "files": "src/**/*.ts",
+      "project": "src/tsconfig.json"
+    },
+    {
+      "files": "e2e/**/*.ts",
+      "project": "e2e/tsconfig.json"
+    }
+  ],
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "css",
+    "prefixInterfaces": false,
+    "inline": {
+      "style": false,
+      "template": false
+    },
+    "spec": {
+      "class": false,
+      "component": true,
+      "directive": true,
+      "module": false,
+      "pipe": true,
+      "service": true
+    }
+  }
+}
